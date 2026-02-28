@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QWER Fan Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">QWER</div>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <div id="side-menu" class="side-menu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <ul>
+            <li><a href="#about" onclick="toggleMenu()">團體介紹</a></li>
+            <li><a href="#members" onclick="toggleMenu()">成員介紹</a></li>
+            <li><a href="#awards" onclick="toggleMenu()">獲獎紀錄</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="hero">
+            <h1>QWER</h1>
+            <p>Discord to Harmony</p>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 class="title-pink">團體介紹</h2>
+            <p>由金雞蛋企劃打造的成長型女子搖滾樂團...</p>
+        </section>
+
+        <section id="members" class="content-section grey-bg">
+            <h2 class="title-pink">成員介紹</h2>
+            <div class="member-list">
+                <div class="member-item">Chodan (鼓手)</div>
+                <div class="member-item">Magenta (貝斯)</div>
+                <div class="member-item">Hina (吉他)</div>
+                <div class="member-item">Siyeon (主唱)</div>
+            </div>
+        </section>
+        
+        <section id="awards" class="content-section">
+            <h2 class="title-pink">獲獎紀錄</h2>
+            <ul>
+                <li>2024 Melon Music Awards - TOP10 (入圍)</li>
+                <li>〈Discord〉- YouTube Music 紀錄保持</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
