@@ -16,7 +16,7 @@ const correctOrder = ['Q', 'W', 'E', 'R'];
 
 // 音效定義 (保留你之前的設定)
 const sounds = {
-    'Q': new Audio('tbh.mp3'),
+    'Q': new Audio('audio/q.mp3'),
     'W': new Audio('audio/w.mp3'),
     'E': new Audio('audio/e.mp3'),
     'R': new Audio('audio/r.mp3')
