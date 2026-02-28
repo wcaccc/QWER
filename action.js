@@ -56,10 +56,13 @@ function triggerEffect(key) {
 
         // 5. 檢查是否集齊四人
         if (currentIndex === 4) {
+            statusMsg.innerHTML = "<strong>✨ QWER 集合完畢！成為河蟹吧！ ✨</strong>";
+            
+            // --- 新增：跳轉到 YouTube ---
+            // 等待 1.5 秒後跳轉，讓使用者看完訊息
             setTimeout(() => {
-                statusMsg.innerHTML = "<strong>✨ QWER 集合完畢！成為河蟹吧！ ✨</strong>";
-                // 這裡可以觸發最終音效
-            }, 300);
+                window.location.href = "https://www.youtube.com/watch?v=ImuWa3SJulY";
+            }, 1000); // 1500 毫秒 = 1.5 秒
         }
     } else {
         // 順序錯誤！
